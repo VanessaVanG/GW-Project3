@@ -1,5 +1,5 @@
-  const firstCloud = document.querySelector('#first-cloud');
-  const secondCloud = document.querySelector('#second-cloud');
+const firstCloud = document.querySelector('#first-cloud');
+const secondCloud = document.querySelector('#second-cloud');
 
 
 //populate the select menu for the clouds
