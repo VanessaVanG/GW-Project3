@@ -1,5 +1,3 @@
-console.log("Hello");
-
 // Getting references to the input fields, button, and lists
 var $submitBtn = document.querySelector("#submit");
 
