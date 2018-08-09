@@ -1,0 +1,140 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 0 0 35px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: ghostwhite;
+    margin: 3rem auto;
+    max-width: 100%;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+  @media screen and (min-width: 35rem) {
+    section {
+      flex-direction: row;
+    }
+  }
+  section > * {
+    flex: 1;
+  }
+  
+  article {
+    padding: 0 1rem;
+    
+  }
+  article p {
+    font-family: Helvetica;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  @media screen and (min-width: 35rem) {
+    article p {
+      margin: 0;
+    }
+  }
+  @media screen and (min-width: 35rem) {
+    article p:not(:last-of-type) {
+      min-height: 90vh;
+    }
+  }
+  
+  figure {
+    align-items: center;
+    align-self: flex-start;
+    /* background-color: #daf7a6; */
+    display: flex;
+    height: 60rem;
+    margin: 0;
+    width: 60rem;
+    justify-content: left;
+    top: 3rem;
+  }
+  @media screen and (min-width: 35rem) {
+    figure {
+      position: -webkit-sticky;
+      position: sticky;
+    }
+  }
+  figure .first-image {
+    height: 10rem;
+    margin: 0;
+    width: 30rem;
+    /* justify-content: center; */
+  
+  }
+  figure .second-image {
+    height: 10rem;
+    margin: 0;
+    width: 30rem;
+    /* justify-content: center; */
+  }
+  .masthead {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 200px 0;
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+       rgba(0, 0, 0, 0.7), 
+       rgba(0, 0, 0, 0.7) ),
+        url("https://www.macleans.ca/wp-content/uploads/2015/01/right-left.jpg") no-repeat bottom center scroll;
+    background-color: white;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+  
+  .masthead .intro-body {
+    display: table-cell; 
+    vertical-align: middle; 
+  }
+  
+  .masthead .intro-body .brand-heading {
+    font-size: 50px;
+    /* vertical-align: text-top; */
+  }
+  
+  .masthead .intro-body .intro-text {
+    font-size: 18px;
+    vertical-align: bottom; 
+  }
+  
+  @media (min-width: 768px) {
+    .masthead {
+      height: 100%;
+      padding: 0;
+    }
+    .masthead .intro-body .brand-heading {
+      font-size: 100px;
+    }
+    .masthead .intro-body .intro-text {
+      font-size: 22px;
+    }
+  }
+
+  
