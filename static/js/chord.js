@@ -83,8 +83,8 @@ Plotly.d3.json("/chord", function(error, response) {
   zingchart.render({
     id: 'chordChart',
     data: myConfig,
-    height: '100%', 
-    width: '100%' 
+    height: 1000, 
+    width: 1000 
   });
 
 }); 
