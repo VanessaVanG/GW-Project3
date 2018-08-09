@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Settling the Score</title>
+	<meta name="description" content="PuddleNet: the story of (not)talking">
+	<meta name="author" content="Group of concerned citizens">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+	
+	<!-- Intro Header -->
+	<header class="masthead" id="top">
+		<div class="intro-body">
+			<div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <h1 class="brand-heading">Settling the Score</h1>
+                        <p class="intro-text">An analysis of the textual differences in left and right leaning news media sources
+                        <p>Created by Captain Bouncy, the Rodneys, Boss &amp; Co., Big Red and Anna</p>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</header>
+	<!-- About Section -->
+	<section id="about" class="content-section text-center">
+		<div class="container">
+			<div class="row">
+			<div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
+				<h2>About PuddleNet</h2>
+				<p class="text-left">PuddleNet&mdash;it was to be our answer to a question we had not yet found. This project started with a desire
+				to understand the political climate and the language being consumed by the masses. We wanted to be explorers
+				of a polarized lexicon that seemed to be dividing this country.</p>
+				<p class="text-left">As our project unfolded, we identified 20 sources from which to gather language. We chose an equal number of popular
+				left- and right-leaning news media sites to scrape, and began our process of gathering human thought that has
+				been recorded in sentences.</p>
+				<p class="text-left">As the data began rolling in, millions of words per site, we needed to find a way to start making sense of it all.
+				We chose a two-pronged approach. First, we would begin grouping and inspecting to look for patterns, find relationships,
+				further direct our exploration. Second, we we wanted a machine learning model to learn what left- or right-leaning
+				text would look like so that we could use it to identify political leanings of a text, or even build text blocks
+				with perspective.</p>
+				<p class="text-left">And so we got to work...</p>
+				
+				</a>
+			</div>
+			</div>
+		</div>
+	</section>
+	<section id="cloud">
+		<figure class='figbox'>
+			
+			<figcaption>
+				<form>
+					<div class="form-group">
+						<select class="form-control" id="first-cloud" onchange="firstOptionChanged(this.value)"></select>
+					</div>
+					
+				</form>
+				<div class="form-group text-center">
+						<figure class="figure" id="first-image"></figure>
+					</div>
+
+			</figcaption>
+			
+			<figcaption>
+				<form>
+					<div class="form-group">
+						<figure class="form-control" id="second-cloud" onchange="secondOptionChanged(this.value)"></select>
+					</div>
+					
+				</form>
+				<div class="form-group text-center">
+						<img class="figure" id="second-image"></figure>
+					</div>
+			</figcaption>
+			<!-- </div> -->
+		</figure>
+
+		<article>
+		
+			<p>Word clouds are very subjective and require data cleaning in order to extract insights from them. It relies
+			heavily on the human brain to identify patterns and/or relationships. In its simplest form, the more frequent
+			words are illustrated with bigger size in the cloud. Common grammar words are typically removed so "THE"
+			does not steal the show.</p>
+			<p>In looking at the individual word clouds (select from drop downs), we began inspecting the language. We began
+			to have an inkling that there was definitely something different between the lexicons used by each side.
+			However, we were unable to put a finger on it. We then rolled the word clouds up into groups of left and
+			right, and the pattern began to take shape.</p>
+			<p>The Conservative Lexicon seemed to be a little more focused on political terms, whereas the Liberal Lexicon
+			almost seemed a little erratic.</p>
+			<p>This was surprising. So, we needed to explore the anatomy of the articles&hellip;
+			</p>
+			
+		
+		</article>
+	</section>
+	<section id='outro'></section>
+	<!--<div class='debug'></div>-->
+	<script src='https://d3js.org/d3.v3.min.js'></script>
+	<script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
+  	<script src='https://unpkg.com/scrollama'></script>
+	<script type="text/javascript" src="../static/js/index.js"></script>
+	<script type="text/javascript" src="../static/js/word_cloud.js"></script>
+</body>
+
+</html>
