@@ -266,6 +266,11 @@ body {
   .gray-bg {
     background: grey;
   }
+/* iframe styling need some work - rendering behind section following it*/
+  iframe {
+    height: 520px;
+    width: 100%;
+  }
   
   /* .white-section {
     display: table;
