@@ -30,19 +30,19 @@ def cloud(word_cloud):
 @app.route('/chord')
 def chord():
 
-    with open('static/data/chorddata.json') as filename:
-        chorddata = json.load(filename)
+    with open('static/data/chord-data.json') as filename:
+        chordData = json.load(filename)
 
-    return (jsonify(chorddata))   
+    return (jsonify(chordData))   
 
-#boxplot
-@app.route('/boxplot')
-def boxplot():
+#model bias predictor
+@app.route('/model')
+def model():
 
-    with open('static/data/boxdata.json') as filename:
-        boxdata = json.load(filename)
+    with open('static/data/model-data.json') as filename:
+        modelData = json.load(filename)
 
-    return (jsonify(boxdata)) 
+    return (jsonify(modelData)) 
 
 #run the app
 if __name__ == '__main__':
