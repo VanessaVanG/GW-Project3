@@ -75,7 +75,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 mx-auto">
-            <h1 class="brand-heading">Settling the Score</h1>
+            <h1 class="brand-heading">Exploring the Divide</h1>
             <p class="intro-text">An analysis of the textual differences in left and right leaning news media sources
                 <p>Created by Captain Bouncy, the Rodneys, Boss &amp; Co., Big Red and Anna</p>
               <!-- <a href="#about" class="btn btn-circle js-scroll-trigger">
@@ -91,7 +91,7 @@
   </header>
 
   <!-- About Section -->
-  <section id="about" class="content-section text-center">
+<!--   <section id="about" class="content-section text-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-12 mx-auto">
@@ -107,19 +107,19 @@
             further direct our exploration. Second, we we wanted a machine learning model to learn what left- or right-leaning
             text would look like so that we could use it to identify political leanings of a text, or even build text blocks
             with perspective.</p>
-          <p class="text-left">And so we got to work...</p>
+          <p class="text-left">And so we got to work...</p> -->
           <!-- <a href="#wordcloud" class="btn btn-circle js-scroll-trigger">
             <i class="fa fa-angle-double-down animated"></i>
           </a> -->
-        </div>
+<!--         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Plots Section -->
   <section id='wordcloud' class='white-section'>
     <figure class="cloud">
-      <img src="../static/img/AllCombined.png" alt="all combined wordcloud" style="height:500px;width:991px;">
+      <img src="{{ url_for('static', filename='img/AllCombined.png')}}" alt="all combined wordcloud" style="height:500px;width:991px;">
       <!-- <img src="../static/img/L-All.png" alt="all left wordcloud" style="height:440px;width:405px">
       <img src="../static/img/R-All.png" alt="all right wordcloud" style="height:440px;width:405px"> -->
     </figure>
@@ -256,25 +256,26 @@
     </div>
   </section>
 
-  <section class="white-section" id="all-words">
-    <div class="container">
-      <!-- <div class="row">
-        <div class="col-sm-12 col-md-8 col-lg-6 mx-auto">
-          <p>This cloud spanned both sides of the stage. It clearly shows it is more similar to the Conservative Word Cloud
-            than it is to the Liberal Word Cloud. Despite what we discovered, the volume and quality of the Left, the Right-Leaning
-            media was dominating the space.&nbsp;</p>
+  <section id="map">
+    <div class="container iframe">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="brand-heading text-center">Right Map</h1>
+          <iframe width="100%" height="520" frameborder="0" src="https://vanessavang.carto.com/builder/67dc0431-fd24-4cc2-9476-ca73dfdfdc07/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+        </div>
+        <div class="col-lg-12">
+            <h1 class="brand-heading text-center">Left Map</h1>
+            <iframe width="100%" height="520" frameborder="0" src="https://vanessavang.carto.com/builder/81b0b3c6-a0ca-4a77-becf-257e21052f08/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
         </div>
       </div>
-      <div class="row">
-        <div class="container col-lg-8 col-md-10 col-sm-12 pb-5">
-          <img class="figure-img rounded img-big" src="{{ url_for('static', filename='img/AllCombined.png')}}">
-        </div>
-      </div> -->
-      <h2 class="text-center">Predictive Model</h2>
+    </div> 
+  </section>
+     
       <section id='wordcloud' class='white-section'>
         
           <figure class="model">
-            <img src="../static/img/left-bias.PNG" alt="left bias bar chart" style="height:35rem;width:35rem;">
+            <img src="{{ url_for('static', filename='img/left-bias.png')}}" alt="left bias bar chart" style="height:35rem;width:35rem;">
             <!-- <img src="../static/img/right-bias.PNG" alt="right bias bar chart" style="height:35rem;width:35rem;"> -->
           </figure>
           <article>
@@ -293,7 +294,7 @@
       <section id='wordcloud' class='white-section'>
           <figure class="model">
             <!-- <img src="../static/img/left-bias.PNG" alt="left bias bar chart" style="height:35rem;width:35rem;"> -->
-            <img src="../static/img/right-bias.PNG" alt="right bias bar chart" style="height:35rem;width:35rem;">
+            <img src="{{ url_for('static', filename='img/right-bias.png')}}" alt="right bias bar chart" style="height:35rem;width:35rem;">
           </figure>
           <article>
           
@@ -308,7 +309,7 @@
                   
           </article> 
       </section>
-      <div class="row">
+<!--       <div class="row">
         <div class="col-sm-12 col-md-10 col-lg-8 mx-auto pt-5">
           <h1 class="text-center">Conclusion?</h1>
           <p>Our exploration of the media lexicon has taught us 4 very important lessons:</p>
@@ -329,7 +330,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="content-section" id="textEnter">
     <div class="intro-body">
