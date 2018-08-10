@@ -30,14 +30,14 @@ function handleSubmitClick(event) {
   
     // If probability is NaN
     if (isNaN(right_proba)){
-      d3.select("h2>span").text("term(s) not found.");
+      d3.select("h2>span").text("Term(s) not found");
     }
     else{
       if (right_proba > left_proba) {
-        d3.select("h2>span").text(right_proba + "% probability the site's bias is Right.");
+        d3.select("h2>span").text(right_proba + "% probability the site's bias is Right");
       }
       else {
-        d3.select("h2>span").text(left_proba + "% probability the site's bias is Left.");
+        d3.select("h2>span").text(left_proba + "% probability the site's bias is Left");
       }
     }
 
