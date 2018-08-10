@@ -11,23 +11,21 @@ h5,
 h6 {
     font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
-    margin: 0 0 35px;
+    margin: 0 0 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 p {
     font-size: 16px;
     line-height: 1.5;
-    margin: 0 0 25px;
-    
-    
+    margin: 0 0 20px;
   }
   
   @media (min-width: 768px) {
     p {
       font-size: 18px;
       line-height: 1.6;
-      margin: 0 0 35px;
+      margin: 0 0 30px;
     }
   }
 
@@ -39,40 +37,43 @@ body {
   
   h1 {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   
   section {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5rem;
-    /* align-content: flex-start; */
-    
+    margin-bottom: 2rem;
+    /* align-content: flex-start; */ 
   }
+
   @media screen and (min-width: 35rem) {
     section {
       flex-direction: row;
     }
   }
+
   section > * {
     flex: 1;
   }
   
   article {
     padding: 0 1rem;
-    
   }
+
   article p {
     font-family: Helvetica;
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 0;
   }
+
   @media screen and (min-width: 35rem) {
     article p {
       margin: 0;
     }
   }
+
   @media screen and (min-width: 35rem) {
     article p:not(:last-of-type) {
       min-height: 90vh;
@@ -114,7 +115,6 @@ body {
     justify-content: center;
     top: 3rem;
     flex: 2;
-  
   }
  
   @media screen and (min-width: 35rem) {
@@ -124,7 +124,6 @@ body {
     }
   }
  
-  
   .masthead {
     display: table;
     
@@ -181,8 +180,8 @@ body {
   } 
   
   .content-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 200px;
     padding-right: 200px;
     font-size: 25px;
