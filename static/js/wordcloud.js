@@ -4,17 +4,17 @@ const secondCloud = document.querySelector('#second-cloud');
 
 //populate the select menu for the clouds
 function cloudNameSelect() {
-  const labels = ['All Right News', 'The American Conservative', 'Breitbart', 'Daily Wire', 'The Fiscal Times', 'Fox News', 'The Hill', 'NY Post', 'OANN', 'Reason', 'Washington Times', '-----------', 'All Left News', 'The Atlantic', 'BBC', 'Daily Beast', 'The Guardian', 'Intercept', 'Mother Jones', 'New Republic', 'Politico', 'Slate', 'Washington Post'];
+  const labels = ['All Right News', 'The American Conservative', 'Breitbart', 'Daily Wire', 'Economist', 'The Fiscal Times', 'Fox News', 'The Hill', 'NY Post', 'Reason', 'Washington Times', '-----------', 'All Left News', 'The Atlantic', 'BBC', 'Daily Beast', 'The Guardian', 'Intercept', 'Mother Jones', 'New Republic', 'Politico', 'Slate', 'Washington Post'];
   const png_name = [
     'R-All.png', 
     'R-AmericanConservative.png', 
     'R-Breitbart.png', 
-    'R-DailyWire.png', 
-    'R-TFT.png', 
+    'R-DailyWire.png',
+    'R-Economist.png', 
+    'R-FiscalTimes.png', 
     'R-FoxNews.png', 
     'R-Hill.png', 
-    'R-NYPost.png', 
-    'R-OANN.png', 
+    'R-NewYorkPost.png', 
     'R-Reason.png', 
     'R-WashingtonTimes.png', 
     ' ', 
