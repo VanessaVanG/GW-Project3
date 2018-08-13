@@ -26,7 +26,6 @@ function handleSubmitClick(event) {
 
     // Calculate probability for other side
     var left_proba = 100 - right_proba;
-    console.log(right_proba, left_proba);
   
     // If probability is NaN
     if (isNaN(right_proba)){

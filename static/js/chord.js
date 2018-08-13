@@ -20,16 +20,12 @@ Plotly.d3.json("/chord", function(error, response) {
     // 'values' is key and list from JSON is value
     chordObj['values'] = response[0][titles[i]];
 
-    //console.log(chordObj);
-
     // Add dictionary to list
     seriesList.push(chordObj);
 
     // Clear out dictionary
     chordObj = {};
   }
-
-  console.log(seriesList);
 
   const myConfig = {
     "type": "chord",
